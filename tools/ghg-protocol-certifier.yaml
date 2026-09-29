@@ -1,0 +1,14 @@
+name: "ghg-protocol-certifier"
+description: "Validates total carbon footprint report against GHG Protocol Corporate Standard"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "ghg_protocol_certifier.py"
+parameters:
+  type: "object"
+  properties:
+    total_emissions_json:
+      type: "string"
+      description: "JSON with total_mt_co2e and reporting_year"
+  required:
+    - "total_emissions_json"

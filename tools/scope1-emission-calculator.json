@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "calculate_scope1_emissions",
+  "description": "Computes metric tonnes CO2e from natural gas and diesel fuel consumption",
+  "type": "object",
+  "properties": {
+    "fuel_data_json": {
+      "type": "string",
+      "description": "JSON with natural_gas_therms and diesel_gallons"
+    }
+  },
+  "required": [
+    "fuel_data_json"
+  ]
+}

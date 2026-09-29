@@ -1,0 +1,14 @@
+name: "scope1-emission-calculator"
+description: "Computes metric tonnes CO2e from natural gas and diesel fuel consumption"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "scope1_emission_calculator.py"
+parameters:
+  type: "object"
+  properties:
+    fuel_data_json:
+      type: "string"
+      description: "JSON with natural_gas_therms and diesel_gallons"
+  required:
+    - "fuel_data_json"

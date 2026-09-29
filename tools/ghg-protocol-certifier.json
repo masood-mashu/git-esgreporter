@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "certify_ghg_report",
+  "description": "Validates total carbon footprint report against GHG Protocol Corporate Standard",
+  "type": "object",
+  "properties": {
+    "total_emissions_json": {
+      "type": "string",
+      "description": "JSON with total_mt_co2e and reporting_year"
+    }
+  },
+  "required": [
+    "total_emissions_json"
+  ]
+}

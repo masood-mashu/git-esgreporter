@@ -1,0 +1,14 @@
+name: "scope2-market-grid-factor"
+description: "Applies eGRID regional carbon factor to purchased electricity kilowatt-hours"
+version: "0.1.0"
+runtime:
+  language: "python"
+  entrypoint: "scope2_market_grid_factor.py"
+parameters:
+  type: "object"
+  properties:
+    electricity_json:
+      type: "string"
+      description: "JSON with kwh_consumed and grid_factor_kg_per_kwh"
+  required:
+    - "electricity_json"

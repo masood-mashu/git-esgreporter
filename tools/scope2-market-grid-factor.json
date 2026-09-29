@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "calculate_scope2_emissions",
+  "description": "Applies eGRID regional carbon factor to purchased electricity kilowatt-hours",
+  "type": "object",
+  "properties": {
+    "electricity_json": {
+      "type": "string",
+      "description": "JSON with kwh_consumed and grid_factor_kg_per_kwh"
+    }
+  },
+  "required": [
+    "electricity_json"
+  ]
+}
